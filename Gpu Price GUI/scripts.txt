@@ -1,0 +1,68 @@
+VIEW SCRIPT
+------------------
+
+def VIEW():
+    <variable>, <variable> = <variable>[Selected()]
+    <variable>.set(<variable>)
+    <variable>.set(<variable>)
+
+--------------------------------------------------------------------------------------------------------------------------
+
+DEFAULT WEB SCRAPPING SCRIPT
+------------------------------------------------
+
+<variable> = "<link>"
+
+<variable> = requests.get(<variable>)
+<variable> = BeautifulSoup(<file as> "html.parser")
+ 
+<variable> = <variable>.find_all("$")
+<variable> = <variable>[0].parent
+<variable> = <variable>.find("strong")
+
+--------------------------------------------------------------------------------------------------------------------------
+
+WINDOW SCRIPT
+-----------------------
+
+root = Tk()
+root.geometry("<gui_size>")
+root.resizable(0,0)
+root.title("<title>")
+---------------------------------------------------------------------------------------------------------------------------
+
+SET SELECT SCRIPT
+----------------------
+
+def <func_name>():
+    <variable>.sort()
+    select.delete(0,END)
+    for name,phone in <variable>:
+        select.insert(END, <variable>)
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+TEXT SCRIPT
+------------------
+
+Label(root, text = "<variable>", font="<font_name>",).place(<location>)
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+BUTTON SCRIPT
+----------------------
+
+Button(root,text="<variable>", font="<font_name>", command = <variable>.).place(<location>)
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+SELECT SCRIPT
+----------------------
+def Selected():
+    return int(select.curselection()[0])
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+ENTRY SCRIPT
+--------------------
+Entry(root,textvariable = <variable>).place(<location>)
